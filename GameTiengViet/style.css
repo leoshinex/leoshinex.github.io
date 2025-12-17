@@ -1,16 +1,51 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 420px;
     text-align: center;
-    margin-top: 100px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 h1 {
-    color: #2c3e50;
+    margin-bottom: 20px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#scrambled-word {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    border: 3px solid #4CAF50;
+    border-radius: 10px;
+    background: #f0fff0;
+    margin-bottom: 20px;
+}
+
+#guess-input {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+}
+
+#status {
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 24px;
 }

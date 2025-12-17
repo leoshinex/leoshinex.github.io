@@ -2,15 +2,28 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Website đầu tiên</title>
+    <title>Game Đảo Chữ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Xin chào 👋</h1>
-    <p>Đây là website đầu tiên của tôi.</p>
 
-    <button onclick="sayHello()">Click me</button>
+<div class="game-container">
+    <h1>GAME ĐẢO CHỮ</h1>
 
-    <script src="script.js"></script>
+    <div id="score">Điểm: 0</div>
+
+    <div id="scrambled-word">...</div>
+
+    <input
+        type="text"
+        id="guess-input"
+        placeholder="Nhập từ đoán và nhấn Enter"
+        autocomplete="off"
+    >
+
+    <div id="status"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
